@@ -1,11 +1,34 @@
 @import './common';
 @import './example';
 
-@import '../partials/header.html';
-@import '../partials/hero.html';
-@import '../partials/feature.html';
-@import '../partials/video.html';
-@import '../partials/team.html';
-@import '../partials/testimonials.html';
-@import '../partials/contacts.html';
-@import '../partials/footer.html';
+// main.scss //
+// подключаем все стили проекта
+
+// utils styles - переменные
+@import './utils/vars';
+
+// base styles - базовые стили
+@import './base/body';
+@import './base/hidden';
+@import './base/reset';
+@import './base/section';
+
+// components style - стили компонентов
+@import './components/button';
+@import './components/logo';
+@import './components/menu';
+@import './components/modal';
+@import './components/navigation';
+@import './components/registration-form';
+@import './components/socials';
+@import './components/store-links';
+
+// layout styles - стили секции
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/feature';
+@import './layouts/video';
+@import './layouts/team';
+@import './layouts/testimonials';
+@import './layouts/contacts';
+@import './layouts/footer';
