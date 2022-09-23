@@ -1,0 +1,48 @@
+// .container {
+
+// }
+
+// .aside {
+
+// }
+
+.title {
+    text-align: center;
+
+    @media  screen and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+      
+}
+
+.aside__img {
+    width: 181px;
+    height: 181px;
+}
+
+.aside__subject {
+    font-size: 18px;
+    line-height: 1.22; 
+    text-align: center;
+}  
+
+.aside__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+}
+
+.aside__desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+
+        @media  screen and (min-width: 768px) {
+            font-size: 16px;
+            line-height: 1.5;
+    }
+    
+}
