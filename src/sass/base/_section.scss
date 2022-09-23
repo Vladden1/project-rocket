@@ -1,0 +1,16 @@
+.section {
+  // desktop
+  @media screen and (min-width: 1200px) {
+    padding: 80px 0;
+  }
+
+  // tablet
+  @media screen and (max-width: 1199px) {
+    padding: 80px 0;
+  }
+
+  // mobile
+  @media screen and (max-width: 480px) {
+    padding: 40px 0;
+  }
+}

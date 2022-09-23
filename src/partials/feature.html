@@ -1,11 +1,47 @@
 <section class="features section">
   <div class="container">
-    <h2 class="features__title">KEY FEATURES</h2>
+    <h2 class="features__title title">KEY FEATURES</h2>
     <p class="features__text">
       Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque
       neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis.
       Praesent luctus mi quis nisi interdum eleifend.
     </p>
+    <div class="features__img-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/features/img-fratures-lg-@1x.png 1x,
+            ./images/features/img-fratures-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/features/img-features-md-@1x.png 1x,
+            ./images/features/img-features-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/features/img-features-sm-@1x.png 1x,
+            ./images/features/img-features-sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="features__img"
+          src="./images/features/img-features-sm-@1x.png"
+          alt="smartphone with man on chair"
+          width="280"
+          height="409"
+          loading="lazy"
+        />
+      </picture>
+    </div>
     <div class="features__wrapper">
       <ul class="features__list list">
         <li class="features__item">
