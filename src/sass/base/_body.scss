@@ -1,8 +1,15 @@
-// Общии стили для body
-// body {
-//   background-color: var(--privary-white-color);
-//   color: var(--primary-text-color);
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-balck-color);
 
-//   font-family: 'Roboto', sans-serif;
-//   letter-spacing: 0.03em;
-// }
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.title {
+  color: var(--primary-black-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
