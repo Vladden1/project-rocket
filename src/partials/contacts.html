@@ -1,30 +1,21 @@
 <section class="section contacts" id="contacts">
   <div class="container">
-    <h2 class="contacts__title">contact us</h2>
+    <h2 class="contacts__title title">contact us</h2>
 
     <div class="contact-form">
       <form class="registration-form" name="registration-form">
         <div class="form-group" role="group">
-          <label class="form-field">
-            <textarea
-              class="form-name size"
-              name="user-message"
-              rows="1"
-              placeholder="Name"
-            ></textarea>
+          <label class="form-label">
+            <input type="text" class="form-input name" placeholder="Name" />
           </label>
-          <label class="form-field">
-            <textarea
-              class="form-tel size"
-              name="user-message"
-              rows="1"
-              placeholder="Email"
-            ></textarea>
+
+          <label class="form-label">
+            <input type="text" class="form-input email" placeholder="Email" />
           </label>
-          <label class="form-message"> </label>
-          <label class="form-field">
+
+          <label class="form-label message">
             <textarea
-              class="form-message size"
+              class="form-input message"
               name="user-message"
               rows="6"
               placeholder="Введіть текст"
@@ -32,7 +23,7 @@
           </label>
         </div>
 
-        <button class="form-btn button" type="submit">Відправити</button>
+        <button class="form-btn button" type="submit">submit</button>
       </form>
     </div>
     <div class="contacts-socials">
@@ -50,6 +41,18 @@
         </li>
         <li class="socials__item">
           <a class="socials__link" href=""></a>
+        </li>
+      </ul>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a href="mailto:goIteens@gmail.com" class="contacts__link">
+            goIteens@gmail.com</a
+          >
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+xx-xxxx-xxxx-xx" class="contacts__link">
+            +xx-xxxx-xxxx-xx</a
+          >
         </li>
       </ul>
     </div>
