@@ -4,6 +4,7 @@
 // подключаем все стили проекта
 
 // utils styles - переменные
+
 @import './utils/vars';
 
 // base styles - базовые стили
@@ -26,7 +27,7 @@
 // layout styles - стили секции
 @import './layouts/header';
 @import './layouts/hero';
-// @import './layouts/feature';
+@import './layouts/feature';
 @import './layouts/video';
 @import './layouts/team';
 @import './layouts/testimonials';
