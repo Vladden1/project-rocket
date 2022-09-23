@@ -17,6 +17,12 @@
   }
 }
 
+.hero__container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .hero__title {
   margin-bottom: 12px;
 
@@ -30,12 +36,14 @@
 }
 
 .hero__title--secondary {
+  max-width: 241px;
   margin-bottom: 20px;
 
   font-size: 18px;
   line-height: 1.22;
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
+    max-width: none;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -75,6 +83,16 @@
   top: 0;
   right: 0;
   z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    top: 86px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -135px;
+    right: 0;
+  }
 }
 
 .hero__bg-image {
