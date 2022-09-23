@@ -1,0 +1,120 @@
+.team {
+    padding-top: 22.86px;
+    padding-bottom: 40px;
+}
+
+.title {
+    text-align: center;
+}
+.text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000000;
+    text-align: center;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+
+    @media screen and (min-width: 1280px) {
+        width: 886px;
+        margin-bottom: 80px;
+    }
+
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.team__item {
+    width: 280px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 336px;
+        margin-right: 32px;
+        &:nth-child(even) {
+            margin-right: 0px;
+        }
+    }
+    
+    @media screen and (min-width: 1280px) {
+            width: 288px;
+            margin-right: 32px;
+            margin-bottom: 0;
+            &:last-child {
+                margin-right: 0px;
+                
+            }
+        }
+}
+
+.team__photo {
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 16px 16px 24px 16px;
+
+    @media screen and (min-width: 768px){
+    margin: 20px;
+  }
+
+    @media screen and (min-width: 1280px) {
+    margin: 14px 12px 20px 12px;
+  }
+}
+
+
+.team__descr {
+  padding-bottom: 12px;
+}
+
+.team__name {
+    color: var( --primary-white-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+.team__position {
+    color: var( --primary-white-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+.member-1 {
+    background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+    backdrop-filter: blur(17.5px);
+}
+
+.member-2 {
+    background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+    backdrop-filter: blur(17.5px);
+}
+
+.member-3 {
+    background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+    backdrop-filter: blur(17.5px);
+
+}
+
+.member-4 {
+    background: linear-gradient(313.81deg, rgba(0, 197, 235, 0.5) -7.83%, rgba(181, 68, 254, 0.5) 83.61%), #06071B;
+    backdrop-filter: blur(17.5px);
+}
+

@@ -1,10 +1,10 @@
 @import './common';
-@import './example';
 
 // main.scss //
 // подключаем все стили проекта
 
 // utils styles - переменные
+
 @import './utils/vars';
 
 // base styles - базовые стили
@@ -12,6 +12,7 @@
 @import './base/hidden';
 @import './base/reset';
 @import './base/section';
+@import './base/container';
 
 // components style - стили компонентов
 @import './components/button';

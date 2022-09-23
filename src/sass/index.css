@@ -1,29 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/logo.png");
-  background-size: cover;
-  background-position: center;
-}
 
 :root {
   --primary-white-color: #fff;
@@ -33,6 +8,20 @@
     #00c5eb -1.97%,
     #b544fe 89.43%
   );
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-balck-color);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.title {
+  color: var(--primary-black-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .visually-hidden {
@@ -93,43 +82,146 @@ textarea {
   list-style: none;
 }
 
+
+.container {
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.team {
+  padding-top: 22.86px;
+  padding-bottom: 40px;
+}
+
 .title {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .title {
-    font-size: 20px;
-    line-height: 1.2;
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #000000;
+  text-align: center;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1280px) {
+  .text {
+    width: 886px;
+    margin-bottom: 80px;
   }
 }
 
-.aside__img {
-  width: 181px;
-  height: 181px;
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.aside__subject {
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
+.team__item {
+  width: 280px;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .team__item {
+    width: 336px;
+    margin-right: 32px;
+  }
+  .team__item:nth-child(even) {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__item {
+    width: 288px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+  .team__item:last-child {
+    margin-right: 0px;
+  }
 }
 
-.aside__text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-}
-
-.aside__desc {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
+.team__photo {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 16px 16px 24px 16px;
 }
 @media screen and (min-width: 768px) {
-  .aside__desc {
-    font-size: 16px;
-    line-height: 1.5;
+  .team__photo {
+    margin: 20px;
   }
+}
+@media screen and (min-width: 1280px) {
+  .team__photo {
+    margin: 14px 12px 20px 12px;
+  }
+}
+
+.team__descr {
+  padding-bottom: 12px;
+}
+
+.team__name {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.team__position {
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.member-1 {
+  background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+  -webkit-backdrop-filter: blur(17.5px);
+          backdrop-filter: blur(17.5px);
+}
+
+.member-2 {
+  background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+  -webkit-backdrop-filter: blur(17.5px);
+          backdrop-filter: blur(17.5px);
+}
+
+.member-3 {
+  background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+  -webkit-backdrop-filter: blur(17.5px);
+          backdrop-filter: blur(17.5px);
+}
+
+.member-4 {
+  background: linear-gradient(313.81deg, rgba(0, 197, 235, 0.5) -7.83%, rgba(181, 68, 254, 0.5) 83.61%), #06071B;
+  -webkit-backdrop-filter: blur(17.5px);
+          backdrop-filter: blur(17.5px);
+
 }/*# sourceMappingURL=index.css.map */

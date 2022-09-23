@@ -1,0 +1,131 @@
+.hero__wrapper {
+  position: relative;
+  z-index: 0;
+
+  padding-top: 20px;
+  padding-bottom: 122px;
+
+  background-color: #06071b;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 143px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 26px;
+    padding-bottom: 146px;
+  }
+}
+
+.hero__container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.hero__title {
+  margin-bottom: 12px;
+
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.hero__title--secondary {
+  max-width: 241px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    max-width: none;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero__list {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.hero__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.hero__item::before {
+  content: '';
+  display: block;
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+}
+
+.hero__button {
+  margin-right: calc((100% - 200px) / 2);
+  margin-left: calc((100% - 200px) / 2);
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    top: 0px;
+    right: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -135px;
+    right: 0;
+  }
+}
+
+.hero__bg-image {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -60px;
+    left: 0;
+  }
+}
