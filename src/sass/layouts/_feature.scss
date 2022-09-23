@@ -1,103 +1,101 @@
-.features{
-padding-top: 40px;
-padding-bottom: 40px;
+// .features {
+//   padding-top: 40px;
+//   padding-bottom: 40px;
 
-    @media screen and(min-width: 768px) {
-        padding-bottom: 80px;
-    }
+//   @media screen and(min-width: 768px) {
+//     padding-bottom: 80px;
+//   }
 
-        @media screen and(min-width: 1280px) {
-            padding-top: 100px;
-            padding-bottom: 100px;
-            
-        }
-}
+//   @media screen and(min-width: 1280px) {
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+//   }
+// }
 
-.features__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 40px;
-}
+// .features__title {
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 24px;
+//   color: #000000;
+//   text-align: center;
+//   margin-bottom: 40px;
+// }
 
-.features__text{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 40px;
-}
+// .features__text {
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 24px;
+//   text-align: center;
+//   color: #000000;
+//   margin-bottom: 40px;
+// }
 
- background-image: url(./images/features/img-features-sm-@1x.png);
+// background-image: url(./images/features/img-features-sm-@1x.png);
 
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     background-image:  url(./images/features/img-features-sm-@2x.png);
- }
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   background-image: url(./images/features/img-features-sm-@2x.png);
+// }
 
- // Tablet screen
- @media screen and (min-width: 481px) {
-     background-image: url(./images/features/img-features-md-@1x.png);
+// // Tablet screen
+// @media screen and (min-width: 481px) {
+//   background-image: url(./images/features/img-features-md-@1x.png);
 
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-         background-image:  url(./images/features/img-features-md-@2x.png);
-     }
- }
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(./images/features/img-features-md-@2x.png);
+//   }
+// }
 
- // Desktop screen
- @media screen and (min-width: 769px) {
-     @include section(200px, 200px);
+// // Desktop screen
+// @media screen and (min-width: 769px) {
+//   @include section(200px, 200px);
 
-     background-image:  url(./images/features/img-fratures-lg-@1x.png);
+//   background-image: url(./images/features/img-fratures-lg-@1x.png);
 
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-         background-image:  url(./images/features/img-fratures-lg-@2x.png);
-     }
- }
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(./images/features/img-fratures-lg-@2x.png);
+//   }
+// }
 
-.features_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+// .features_wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+// }
 
-.features__img{
-    max-width: 280px;
-    margin-bottom: 40px;
-    
-}
+// .features__img {
+//   max-width: 280px;
+//   margin-bottom: 40px;
+// }
 
-.features__list{
-    display: flex;
-    justify-content: center;
-}
+// .features__list {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.features_item{
-    text-align: start;
-    padding-bottom: 24px;
-}
+// .features_item {
+//   text-align: start;
+//   padding-bottom: 24px;
+// }
 
-.features__thumb{
-    display: block;
-}
+// .features__thumb {
+//   display: block;
+// }
 
-.features__subtitle{
-    margin-bottom: 13px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-}
+// .features__subtitle {
+//   margin-bottom: 13px;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 24px;
+// }
 
-.features__subtext{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-}
+// .features__subtext {
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 17px;
+// }
