@@ -35,6 +35,41 @@
       <li class="hero__item">Prasent rutrum ac nunc et</li>
     </ul>
     <button type="button" class="hero__button"></button>
-    <img src="./images/hero/img-hero-lg-1@2x.png" alt="Літаючий телефон" />
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero/img-hero-lg-@1x.png 1x,
+          ./images/hero/img-hero-lg-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/img-hero-md-@1x.png 1x,
+          ./images/hero/img-hero-md-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero/img-hero-sm-@1x.png 1x,
+          ./images/hero/img-hero-sm-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/hero/img-hero-md-@1x.png 1x"
+        alt="Телефон з літаючими іконками програм"
+        width="537"
+        height="412"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
