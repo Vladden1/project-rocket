@@ -1,20 +1,15 @@
-
 body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-white-color);
-    
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+  background-color: var(--primary-white-color);
+  color: var(--primary-balck-color);
 
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
-  .title {
-    color: var(--primary-black-color);
+.title {
+  color: var(--primary-black-color);
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-
-
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}

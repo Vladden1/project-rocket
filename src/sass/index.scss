@@ -1,5 +1,4 @@
 @import './common';
-@import './example';
 
 // main.scss //
 // подключаем все стили проекта
@@ -27,7 +26,7 @@
 // layout styles - стили секции
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/feature';
+// @import './layouts/feature';
 @import './layouts/video';
 @import './layouts/team';
 @import './layouts/testimonials';
