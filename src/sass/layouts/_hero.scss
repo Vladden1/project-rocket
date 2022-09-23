@@ -1,0 +1,68 @@
+.hero {
+  padding-top: 20px;
+  padding-bottom: 122px;
+
+  background-color: #06071b;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 143px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 26px;
+    padding-bottom: 146px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 12px;
+
+  font-size: 24px;
+  line-height: 1.2;
+
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.hero__title--secondary {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.hero__list {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.hero__button {
+  width: 200px;
+  height: 42px;
+}
