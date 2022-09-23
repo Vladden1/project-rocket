@@ -1,0 +1,31 @@
+.section.contacts {
+  font-family: 'Inter';
+  font-style: normal;
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.contacts__title {
+  // desktop
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+
+  // tablet
+  @media screen and (max-width: 479px) {
+    max-width: 480px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  // mobile
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+  }
+}
+
+.form-field .size {
+  resize: none;
+}
