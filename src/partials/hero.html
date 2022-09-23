@@ -1,0 +1,104 @@
+<div class="hero__wrapper">
+  <header class="header">
+    <div class="container header__container">
+      <a href="./index.html" class="logo">Mobileapp</a>
+      <button type="button" class="header__button"></button>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">FEATURES</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">TEAM</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">TESTIMONIALS</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__title">Introducing Mobileapp</h1>
+      <h2 class="hero__title hero__title--secondary">
+        Maecenas vitae tellus sapien. Prasent
+      </h2>
+      <ul class="hero__list">
+        <li class="hero__item">semper scelerisque tristique a enim</li>
+        <li class="hero__item">Integer ut mattis nulla, eget vehicula elit</li>
+        <li class="hero__item">Prasent rutrum ac nunc et</li>
+      </ul>
+      <button type="button" class="hero__button">Download</button>
+      <!-- Зображення з телефоном -->
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero/img-hero-lg-@1x.png 1x,
+            ./images/hero/img-hero-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/img-hero-md-@1x.png 1x,
+            ./images/hero/img-hero-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/img-hero-sm-@1x.png 1x,
+            ./images/hero/img-hero-sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/img-hero-md-@1x.png"
+          alt="Телефон з літаючими іконками програм"
+          loading="lazy"
+          class="hero__image"
+        />
+      </picture>
+      <!-- Зображення з розмиттям -->
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/hero/bg-img-hero-lg-@1x.png 1x,
+            ./images/hero/bg-img-hero-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/bg-img-hero-md-@1x.png 1x,
+            ./images/hero/bg-img-hero-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/bg-img-hero-md-@1x.png"
+          alt="Телефон з літаючими іконками програм"
+          loading="lazy"
+          class="hero__bg-image"
+        />
+      </picture>
+    </div>
+  </section>
+</div>
