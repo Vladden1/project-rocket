@@ -24,7 +24,7 @@
       </nav>
     </div>
   </header>
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">Introducing Mobileapp</h1>
     <h2 class="hero__title hero__title--secondary">
       Maecenas vitae tellus sapien. Prasent
@@ -34,7 +34,8 @@
       <li class="hero__item">Integer ut mattis nulla, eget vehicula elit</li>
       <li class="hero__item">Prasent rutrum ac nunc et</li>
     </ul>
-    <button type="button" class="hero__button"></button>
+    <button type="button" class="hero__button">Download</button>
+    <!-- Зображення з телефоном -->
     <picture>
       <!-- Desktop screen -->
       <source
@@ -64,11 +65,37 @@
         type="image/png"
       />
       <img
-        src="./images/hero/img-hero-md-@1x.png 1x"
+        src="./images/hero/img-hero-md-@1x.png"
         alt="Телефон з літаючими іконками програм"
-        width="537"
-        height="412"
         loading="lazy"
+        class="hero__image"
+      />
+    </picture>
+    <!-- Зображення з розмиттям -->
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero/bg-img-hero-lg-@1x.png 1x,
+          ./images/hero/bg-img-hero-lg-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/bg-img-hero-md-@1x.png 1x,
+          ./images/hero/bg-img-hero-md-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="./images/hero/bg-img-hero-md-@1x.png"
+        alt="Телефон з літаючими іконками програм"
+        loading="lazy"
+        class="hero__bg-image"
       />
     </picture>
   </div>
