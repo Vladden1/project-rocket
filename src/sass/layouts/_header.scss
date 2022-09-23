@@ -35,7 +35,7 @@
   width: 24px;
   height: 14px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -43,7 +43,7 @@
 .navigation {
   display: none;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
