@@ -113,59 +113,10 @@ textarea {
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+    max-width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
   }
-}
-
-.button {
-  position: relative;
-  display: block;
-  padding: 0;
-  min-width: 200px;
-  min-height: 42px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 6px;
-  border: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-.button::after, .button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-}
-.button::before {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.button::after {
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
-  border-radius: 5px;
-  background-color: #06071b;
-  opacity: 0;
-  transition: 300ms;
-}
-.button__text {
-  position: relative;
-  z-index: 10;
-}
-
-.button:hover::after,
-.button:focus::after {
-  opacity: 1;
 }
 
 .header {
@@ -331,6 +282,8 @@ textarea {
 }
 
 .hero__button {
+  width: 200px;
+  height: 42px;
   margin-right: calc((100% - 200px) / 2);
   margin-left: calc((100% - 200px) / 2);
 }
