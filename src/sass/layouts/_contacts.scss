@@ -1,6 +1,7 @@
 .section.contacts {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 0px;
+  background-color: rgba(6, 7, 27, 1);
 }
 .contacts__title {
   font-size: 24px;
@@ -31,8 +32,6 @@
 }
 
 .contacts .container {
-  background-color: rgba(6, 7, 27, 1);
-
   text-align: center;
 }
 .registration-form {
