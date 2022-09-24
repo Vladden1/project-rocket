@@ -1,9 +1,17 @@
 <!-- <script defer src="./js/modal.js"></script> -->
 <div class="backdrop">
   <div class="modal">
+    <button type="button" class="modal__close-button">
+        <svg class="modal__close-icon">
+            <use href="./images/symbol-defs.svg#modal-close-icon"></use>
+        </svg>
+    </button>
     <h2 class="modal__title">Download</h2>
+
+    <!-- Картки з варіантами файлу -->
     <ul class="file__list">
       <li class="file__item">
+        <!-- Безкоштовна програма -->
         <label class="file__card">
           <input type="radio" name="app-card" class="file__checkbox" />
           <span class="card-box">
@@ -28,6 +36,7 @@
         </label>
       </li>
       <li class="file__item">
+        <!-- Платна програма -->
         <label class="file__card">
           <input type="radio" name="app-card" class="file__checkbox" />
           <span class="card-box">
@@ -58,72 +67,92 @@
         </label>
       </li>
     </ul>
-    <p>
+    <p class="modal__description">
         Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. 
         n sit amet lectus non lacus    
     </p>
+
+    <!-- Список з інформацією про програму -->
     <ul class="details">
-        <li class="details__item">
+        <li class="details__item details__item--primary">
+            <!-- Перший список -->
             <ul class="details__list author-details">
                 <li class="author-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#app-name-icon"></use>
                     </svg>
-                    <p>App name</p>
-                    <p>Mobileapp.layout</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">App name</p>
+                        <p class="details__unit">Mobileapp.layout</p>
+                    </div>
                 </li>
                 <li class="author-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#zip-file-icon"></use>
                     </svg>
-                    <p>License</p>
-                    <p>Free</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">License</p>
+                        <p class="details__unit">Free</p>
+                    </div>
                 </li>
                 <li class="author-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#user-avatar"></use>
                     </svg>
-                    <p>Author</p>
-                    <p>Mobile Marrket App.com</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">Author</p>
+                        <p class="details__unit">Mobile Marrket App.com</p>
+                    </div>
                 </li>
                 <li class="author-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#calendar-icon"></use>
                     </svg>
-                    <p>Data</p>
-                    <p>21.02.2022</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">Data</p>
+                        <p class="details__unit">21.02.2022</p>
+                    </div>
                 </li>
             </ul>
         </li>
-        <li class="details__item">
+        <li class="details__item details__item--secondary">
+            <!-- Другий список -->
             <ul class="details__list tech-details">
                 <li class="tech-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#os-icon"></use>
                     </svg>
-                    <p>OC</p>
-                    <p>Windows</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">OC</p>
+                        <p class="details__unit">Windows</p>
+                    </div>
                 </li>
                 <li class="tech-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#language-icon"></use>
                     </svg>
-                    <p>Language</p>
-                    <p>English</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">Language</p>
+                        <p class="details__unit">English</p>
+                    </div>
                 </li>
                 <li class="tech-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#scales-icon"></use>
                     </svg>
-                    <p>Size</p>
-                    <p>4.16 MB</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">Size</p>
+                        <p class="details__unit">4.16 MB</p>
+                    </div>
                 </li>
                 <li class="tech-details__item">
-                    <svg class="file__arrow">
+                    <svg class="details__icon">
                         <use href="./images/symbol-defs.svg#download-icon"></use>
                     </svg>
-                    <p>Downloads</p>
-                    <p>964</p>
+                    <div class="details__wrapper">
+                        <p class="details__name">Downloads</p>
+                        <p class="details__unit">964</p>
+                    </div>
                 </li>
             </ul>
         </li>
