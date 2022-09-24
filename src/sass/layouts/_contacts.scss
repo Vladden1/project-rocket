@@ -2,11 +2,19 @@
   border-bottom: 1px solid #ffffff;
   padding-bottom: 0px;
   background-color: rgba(6, 7, 27, 1);
+
+  background-image: url(../images/contacts/bg-img-contacts-lg-1@1x.png),
+    url(../images/contacts/bg-img-contacts-lg-2@1x.png);
+  background-size: cover;
+  background-position: center bottom;
+
+  background-repeat: no-repeat;
 }
+
 .contacts__title {
   font-size: 24px;
   line-height: 1.21;
-  text-align: center;
+  color: var(--primary-white-color);
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -83,11 +91,15 @@
 .form-btn {
   font-size: 16px;
   line-height: 1.19;
-  text-transform: uppercase;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
 }
 
+.button__text {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
 .contacts__subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -122,4 +134,21 @@
 
 .contacts__item + .contacts__item {
   margin-top: 20px;
+}
+
+.socials__link {
+  outline: 1px solid red;
+  width: 40px;
+  height: 40px;
+}
+.socials__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: #fff;
+  background-color: red;
 }
