@@ -13,6 +13,8 @@
   transform: translateY(-100%);
   transition: transform 500ms linear;
 
+  background-image: url();
+
   &.is-open {
     transform: translateY(0%);
   }
@@ -26,10 +28,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.mobile-menu__wrapper {
   margin-bottom: 65px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 75px;
+  }
 }
 
 .mobile-menu__close-button {
