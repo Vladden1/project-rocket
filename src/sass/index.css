@@ -199,20 +199,26 @@ textarea {
   color: #ffffff;
 }
 
-.header__button {
-  width: 24px;
-  height: 14px;
-  color: #ffffff;
+.menu__button {
+  width: 26px;
+  height: 16px;
+  padding: 0;
+  border: none;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .header__button {
+  .menu__button {
     display: none;
   }
 }
 
-.header__icon {
-  fill: #ffffff;
+.menu__button:active {
+  background-color: yellowgreen;
+}
+
+.menu__icon {
+  width: 26px;
+  height: 16px;
 }
 
 .navigation {
@@ -610,7 +616,7 @@ textarea {
   padding: 0px;
 }
 
-.title {
+.aside__title {
   text-align: center;
   padding-bottom: 40px;
   max-width: 179px;
@@ -618,13 +624,13 @@ textarea {
   margin-right: auto;
 }
 @media screen and (max-width: 767px) {
-  .title {
+  .aside__title {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 @media screen and (min-width: 768px) {
-  .title {
+  .aside__title {
     max-width: 352px;
   }
 }
