@@ -1,7 +1,7 @@
 // =====================================================================
-body {
-  overflow: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 // =====================================================================
 
 .backdrop {
@@ -12,10 +12,9 @@ body {
   width: 100%;
   height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   padding: 40px;
+  overflow: auto;
 
   background-color: salmon;
 }
@@ -24,6 +23,7 @@ body {
   min-width: 280px;
   max-width: 568px;
   padding: 48px 24px;
+  margin: auto;
 
   color: #ffffff;
   background-color: #07081c;
@@ -51,6 +51,12 @@ body {
   background-color: tomato;
 }
 
+.file__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .file__title {
   display: block;
 
@@ -61,11 +67,34 @@ body {
 }
 
 .file__feature {
-  display: block;
+  display: flex;
+  align-items: baseline;
 
   color: #000;
 
   &:not(:last-child) {
     margin-bottom: 12px;
   }
+
+  //   &::before {
+  //     content: '';
+
+  //     display: block;
+  //     width: 14px;
+  //     height: 14px;
+  //     background-color: #000;
+  //     background-image: url(../images/hero/icon-modal-right-arrow.svg);
+  //   }
+}
+
+.file__arrow {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+
+  margin-right: 4px;
+
+  fill: #fff;
+  background-color: #000;
 }
