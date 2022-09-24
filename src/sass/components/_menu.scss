@@ -10,8 +10,9 @@
   align-items: center;
 }
 
-.mobile-menu__logo {
-  margin-bottom: 65px;
+.mobile-menu__wrapper {
+  padding: 16px 20px;
+  margin-bottom: 45px;
 }
 
 .mobile-menu__close-button {
@@ -26,6 +27,12 @@
   border: none;
   background-color: transparent;
 }
+
+// ================================
+.mobile-menu__close-button:active {
+  background-color: yellowgreen;
+}
+// ================================
 
 .mobile-menu__close-icon {
   width: 20px;
