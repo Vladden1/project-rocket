@@ -86,10 +86,14 @@
   margin-bottom: 50px;
 }
 
+.mobile-menu__link {
+  transition: 250ms linear;
+}
+
 .mobile-menu__link:hover,
 .mobile-menu__link:focus,
 .mobile-menu__link--active {
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
