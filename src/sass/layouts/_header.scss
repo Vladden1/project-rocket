@@ -32,21 +32,26 @@
 }
 
 .menu__button {
-  width: 40px;
-  height: 40px;
+  width: 26px;
+  height: 16px;
   padding: 0;
   border: none;
-  background-color: black;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+// ================================
+.menu__button:active {
+  background-color: yellowgreen;
+}
+// ================================
+
 .menu__icon {
   width: 26px;
   height: 16px;
-  fill: #ffffff;
 }
 
 .navigation {
