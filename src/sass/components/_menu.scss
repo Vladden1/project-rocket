@@ -1,0 +1,20 @@
+.mobile-menu {
+  background-color: #07081c;
+}
+
+.mobile-menu__logo {
+  margin-bottom: 65px;
+}
+
+.mobile-menu__list {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.22;
+
+  color: #ffffff;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 50px;
+}
