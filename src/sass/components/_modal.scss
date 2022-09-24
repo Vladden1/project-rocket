@@ -1,0 +1,240 @@
+// ===============================
+// Загальні налаштування =========
+// ===============================
+
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  padding: 40px 20px;
+  overflow: auto;
+
+  opacity: 1;
+
+  background-color: salmon;
+  transition: opacity 300ms linear;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 280px;
+
+  padding: 48px 24px;
+  margin: auto;
+
+  color: #ffffff;
+  background-color: #07081c;
+
+  transform: translateY(0%);
+  transition: transform 300ms linear;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 40px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translateY(100%);
+}
+
+// ===============================
+// Оформлення кнопки =============
+// ===============================
+
+.modal__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.modal__close-icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+// ===============================
+// Оформлення заголовку ==========
+// ===============================
+
+.modal__title {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+// ===============================
+// Оформлення карток програми ====
+// ===============================
+
+.file__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin-bottom: 28px;
+}
+
+.card-box {
+  display: block;
+  width: 232px;
+  height: 394px;
+
+  padding: 20px 28px;
+
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.file__logo {
+  display: block;
+  width: 80px;
+  height: 106px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  background-color: tomato;
+}
+
+.file__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.file__title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+
+.file__feature {
+  display: flex;
+  align-items: baseline;
+
+  font-size: 14px;
+  line-height: 1.71;
+  color: #000;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.file__arrow {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+
+  margin-right: 4px;
+
+  fill: #fff;
+  background-color: #000;
+}
+
+// ===============================
+// Оформлення тексту опису =======
+// ===============================
+
+.modal__description {
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// ===============================
+// Оформлення карток специфікації
+// ===============================
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details__item {
+  padding: 20px;
+  border: 2px solid tomato;
+}
+
+.details__item--primary {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid tomato;
+}
+
+.details__item--secondary {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 1px solid tomato;
+}
+
+.author-details__item,
+.tech-details__item {
+  display: flex;
+}
+
+.author-details__item:not(:last-child),
+.tech-details__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.details__icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+
+  margin-right: 8px;
+
+  fill: #fff;
+}
+
+.details__name {
+  font-size: 12px;
+  line-height: 1.25;
+
+  margin-bottom: 4px;
+}
+
+.details__unit {
+  font-size: 12px;
+  line-height: 1.25;
+
+  color: #1ab9fd;
+}
+
+// ===============================
+// Оформелення посилання
+// ===============================
