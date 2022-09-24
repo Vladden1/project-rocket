@@ -600,8 +600,16 @@ textarea {
           backdrop-filter: blur(17.5px);
 }
 
+.aside {
+  padding: 0px;
+}
+
 .title {
   text-align: center;
+  padding-bottom: 40px;
+  max-width: 179px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .title {
@@ -609,16 +617,25 @@ textarea {
     line-height: 1.2;
   }
 }
+@media screen and (min-width: 768px) {
+  .title {
+    max-width: 352px;
+  }
+}
 
 .aside__img {
-  width: 181px;
-  height: 181px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .aside__subject {
   font-size: 18px;
   line-height: 1.22;
+  font-weight: 700;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
 }
 
 .aside__text {
@@ -626,6 +643,7 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+  padding-bottom: 24px;
 }
 
 .aside__desc {
@@ -633,11 +651,23 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+  padding-bottom: 46px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .aside__desc {
     font-size: 16px;
     line-height: 1.5;
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aside__desc {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 886px;
   }
 }
 
