@@ -10,8 +10,8 @@
 <path d="M18.586 0h-10.586c-2.209 0-4 1.791-4 4v0 24c0 2.209 1.791 4 4 4v0h16c2.209 0 4-1.791 4-4v0-18.586c0-0.53-0.21-1.039-0.586-1.414l-7.414-7.414c-0.362-0.362-0.862-0.586-1.414-0.586h-0zM19 7v-4l6 6h-4c-1.105 0-2-0.895-2-2v0zM11 6v-2h-2v-2h3v2h2v2h-2v2h2v2h-2v2h2v2h-3v-2h-2v-2h2v-2h-2v-2h2zM11 15h2c1.105 0 2 0.895 2 2v0 1.877l0.8 3.198c0.038 0.145 0.059 0.312 0.059 0.484 0 0.691-0.351 1.301-0.884 1.66l-0.007 0.005-1.859 1.239c-0.312 0.21-0.696 0.336-1.109 0.336s-0.797-0.125-1.116-0.34l0.007 0.005-1.862-1.24c-0.539-0.364-0.889-0.973-0.889-1.663 0-0.172 0.022-0.34 0.063-0.499l-0.003 0.014 0.8-3.197v-1.877c0-1.105 0.895-2 2-2v0z"></path>
 </symbol>
 
-<symbol id="Burger" viewBox="0 0 52 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 2h48M2 16h48M2 30h48"></path>
+<symbol id="burger"  width="26" height="16" fill="none">
+<path d="M1 1h24M1 8h24M1 15h24" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
 </symbol>
 
 <symbol id="bxs_calendar" viewBox="0 0 32 32">
