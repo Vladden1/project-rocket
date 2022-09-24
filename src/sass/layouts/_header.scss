@@ -26,6 +26,7 @@
 }
 
 .logo {
+  display: block;
   font-size: 28px;
   line-height: 1.21;
   color: #ffffff;
@@ -33,7 +34,7 @@
 
 .menu__button {
   width: 26px;
-  height: 16px;
+  height: 17px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -42,12 +43,6 @@
     display: none;
   }
 }
-
-// ================================
-.menu__button:active {
-  background-color: yellowgreen;
-}
-// ================================
 
 .menu__icon {
   width: 26px;

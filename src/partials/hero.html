@@ -2,7 +2,12 @@
   <header class="header">
     <div class="container header__container">
       <a href="./index.html" class="logo">Mobileapp</a>
-      <button type="button" class="menu__button">
+      <button
+        type="button"
+        class="menu__button menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu__icon">
           <use href="./images/symbol-defs.svg#burger"></use>
         </svg>
