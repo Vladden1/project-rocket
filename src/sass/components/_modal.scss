@@ -1,10 +1,3 @@
-// .card-box {
-//   display: block;
-//   width: 100px;
-//   height: 100px;
-//   background-color: #000;
-// }
-
 // =====================================================================
 body {
   overflow: hidden;
@@ -34,4 +27,45 @@ body {
 
   color: #ffffff;
   background-color: #07081c;
+}
+
+.card-box {
+  display: block;
+  width: 232px;
+  height: 394px;
+
+  padding: 20px 28px;
+
+  background-color: #fff;
+}
+
+.file__logo {
+  display: block;
+  width: 80px;
+  height: 106px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  background-color: tomato;
+}
+
+.file__title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+  color: #000;
+}
+
+.file__feature {
+  display: block;
+
+  color: #000;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 }
