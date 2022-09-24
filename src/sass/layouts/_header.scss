@@ -31,13 +31,27 @@
   color: #ffffff;
 }
 
-.header__button {
-  width: 24px;
-  height: 14px;
+.menu__button {
+  width: 26px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+// ================================
+.menu__button:active {
+  background-color: yellowgreen;
+}
+// ================================
+
+.menu__icon {
+  width: 26px;
+  height: 16px;
 }
 
 .navigation {
