@@ -1,9 +1,36 @@
 .mobile-menu {
+  //   position: fixed;
+  //   overflow-y: auto;
   background-color: #07081c;
+}
+
+.mobile-menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mobile-menu__logo {
   margin-bottom: 65px;
+}
+
+.mobile-menu__close-button {
+  //   position: absolute;
+  //   top: 16px;
+  //   right: 20px;
+
+  padding: 0;
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__close-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 
 .mobile-menu__list {

@@ -112,8 +112,14 @@
 <!-- Мобільне меню -->
 
 <div class="mobile-menu">
-  <a href="./index.html" class="logo mobile-menu__logo">Mobileapp</a>
-  <button type="button" class="mobile-menu__close-button"></button>
+  <div class="mobile-menu__wrapper">
+    <a href="./index.html" class="logo mobile-menu__logo">Mobileapp</a>
+    <button type="button" class="mobile-menu__close-button">
+      <svg class="mobile-menu__close-icon">
+        <use href="./images/symbol-defs.svg#close-menu__icon"></use>
+      </svg>
+    </button>
+  </div>
   <ul class="mobile-menu__list">
     <li class="mobile-menu__item">
       <a href="#">HOME</a>
