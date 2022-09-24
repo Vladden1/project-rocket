@@ -12,6 +12,7 @@
 }
 
 .contacts__title {
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   line-height: 1.21;
   color: var(--primary-white-color);
@@ -27,15 +28,30 @@
     line-height: 1.2;
   }
   // tablet
-  @media screen and (min-width: 780px) {
-    max-width: 480px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
   }
 
   // desktop
-  @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+  @media screen and (min-width: 1280px) {
     margin-bottom: 80px;
+  }
+}
+
+.contacts__text {
+  // desktop
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+  }
+}
+.contacts__wrapper {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
   }
 }
 
@@ -45,7 +61,11 @@
 .registration-form {
   text-align: center;
 }
-
+.form-group {
+  @media screen and (min-width: 1280px) {
+    min-width: 610px;
+  }
+}
 .form-input {
   width: 100%;
   max-width: 280px;
@@ -60,10 +80,17 @@
   @media screen and (min-width: 768px) {
     max-width: 336px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 288px;
+  }
 }
 
 .form-input.name {
   height: 40px;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
 .form-input.email {
   height: 40px;
@@ -72,9 +99,14 @@
   resize: none;
   border-radius: 5px;
   height: 220px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
+    max-width: 704px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 608px;
+    max-height: 162px;
   }
 }
 
@@ -116,6 +148,7 @@
   color: var(--primary-white-color);
   text-align: center;
 }
+// социальные сети
 
 .socials__list {
   display: flex;
@@ -126,14 +159,6 @@
 
 .socials__item {
   height: 20px;
-}
-
-.contacts__list {
-  color: var(--primary-white-color);
-}
-
-.contacts__item + .contacts__item {
-  margin-top: 20px;
 }
 
 .socials__link {
@@ -151,4 +176,21 @@
 .socials__link:focus .socials__icon {
   fill: #fff;
   background-color: red;
+}
+
+.form-input.name:focus:invalid {
+  border-color: red;
+}
+.form-input.email:focus:invalid {
+  border-color: red;
+}
+
+// контакты
+.contacts__list {
+  color: var(--primary-white-color);
+}
+
+.contacts__item + .contacts__item {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
