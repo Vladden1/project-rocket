@@ -2,7 +2,12 @@
   <header class="header">
     <div class="container header__container">
       <a href="./index.html" class="logo">Mobileapp</a>
-      <button type="button" class="menu__button">
+      <button
+        type="button"
+        class="menu__button menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu__icon">
           <use href="./images/symbol-defs.svg#burger"></use>
         </svg>
@@ -111,10 +116,13 @@
 
 <!-- Мобільне меню -->
 
-<div class="mobile-menu">
+<div class="mobile-menu js-menu-container" id="mobile-menu">
   <div class="mobile-menu__wrapper">
     <a href="./index.html" class="logo mobile-menu__logo">Mobileapp</a>
-    <button type="button" class="mobile-menu__close-button">
+    <button
+      type="button"
+      class="mobile-menu__close-button menu-toggle js-close-menu"
+    >
       <svg class="mobile-menu__close-icon">
         <use href="./images/symbol-defs.svg#close-menu__icon"></use>
       </svg>
@@ -138,3 +146,12 @@
     </li>
   </ul>
 </div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./js/modal.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
