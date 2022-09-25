@@ -1,13 +1,10 @@
 
 .aside {
     padding: 0px;
-
-    // background-image:
-    // url(../images/testimonials/bg-img-testimonials-sm-1@1x.png),
-    // url(../images/testimonials/bg-img-testimonials-sm-2@1x.png);
-
-    // background-image: linear-gradient(90.03deg, rgba(0, 197, 235, 0.2) , rgba(181, 68, 254, 0.2));
-  
+    background-image: 
+        linear-gradient(-148deg, url(../images/testimonials/bg-img-testimonials-sm-2@1x.png)),
+        linear-gradient(-57deg,
+        url(../images/testimonials/bg-img-testimonials-sm-1@1x.png));
 
 }  
 
