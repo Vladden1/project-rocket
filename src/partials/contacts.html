@@ -1,60 +1,106 @@
 <section class="section contacts" id="contacts">
   <div class="container">
     <h2 class="contacts__title title">contact us</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts-form">
+        <form
+          class="registration-form"
+          name="registration-form"
+          autocomplete="off"
+        >
+          <input
+            type="text"
+            class="form-input name"
+            name="user-name"
+            required
+            placeholder="Name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          />
 
-    <div class="contact-form">
-      <form class="registration-form" name="registration-form">
-        <div class="form-group" role="group">
-          <label class="form-label">
-            <input type="text" class="form-input name" placeholder="Name" />
-          </label>
+          <input
+            type="email"
+            class="form-input email"
+            name="mail"
+            placeholder="Email"
+            required
+          />
 
-          <label class="form-label">
-            <input type="text" class="form-input email" placeholder="Email" />
-          </label>
+          <textarea
+            type="text"
+            class="form-input message"
+            name="user-message"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
 
-          <label class="form-label message">
-            <textarea
-              class="form-input message"
-              name="user-message"
-              rows="6"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
-        </div>
-
-        <button class="form-btn button" type="submit">submit</button>
-      </form>
-    </div>
-    <div class="contacts-socials">
-      <h3 class="contacts__subtitle">Get in touch with us</h3>
-      <p class="contacts__text">
-        Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
-        rhoncus lacus fringilla nulla sollicitudin tristique.
-      </p>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link" href=""></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href=""></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href=""></a>
-        </li>
-      </ul>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <a href="mailto:goIteens@gmail.com" class="contacts__link">
-            goIteens@gmail.com</a
-          >
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+xx-xxxx-xxxx-xx" class="contacts__link">
-            +xx-xxxx-xxxx-xx</a
-          >
-        </li>
-      </ul>
+          <button class="form-btn button" type="submit">
+            <span class="button__text">submit</span>
+          </button>
+        </form>
+      </div>
+      <div class="contacts-socials__wrapper">
+        <h3 class="contacts__subtitle">Get in touch with us</h3>
+        <p class="contacts__text">
+          Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
+          rhoncus lacus fringilla nulla sollicitudin tristique.
+        </p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials-link" href="">
+              <svg class="socials-icons" width="40" height="40">
+                <use
+                  class="icon-regular"
+                  href="./images/symbol-defs.svg#icon-facebook"
+                ></use>
+                <use
+                  class="icon-hovered"
+                  href="./images/symbol-defs.svg#icon-facebook-hovered"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials-link" href="">
+              <svg class="socials-icons" width="40" height="40">
+                <use
+                  class="icon-regular"
+                  href="./images/symbol-defs.svg#icon-twitter"
+                ></use>
+                <use
+                  class="icon-hovered"
+                  href="./images/symbol-defs.svg#icon-twitter-hovered"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials-link" href="">
+              <svg class="socials-icons" width="40" height="40">
+                <use
+                  class="icon-regular"
+                  href="./images/symbol-defs.svg#icon-linkedin"
+                ></use>
+                <use
+                  class="icon-hovered"
+                  href="./images/symbol-defs.svg#icon-linkedin-hovered"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a href="tel:+xx-xxxx-xxxx-xx" class="contacts__link">
+              +xx-xxxx-xxxx-xx</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:goIteens@gmail.com" class="contacts__link">
+              goIteens@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
