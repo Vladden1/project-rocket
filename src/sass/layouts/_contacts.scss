@@ -2,11 +2,23 @@
   border-bottom: 1px solid #ffffff;
   padding-bottom: 0px;
   background-color: rgba(6, 7, 27, 1);
+
+  background-image: url(../images/contacts/bg-img-contacts-lg-1@1x.png),
+    url(../images/contacts/bg-img-contacts-lg-2@1x.png);
+  background-size: cover;
+  background-position: center bottom;
+
+  background-repeat: no-repeat;
+}
+
+.contacts-form {
+  width: 100%;
 }
 .contacts__title {
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   line-height: 1.21;
-  text-align: center;
+  color: var(--primary-white-color);
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -19,15 +31,33 @@
     line-height: 1.2;
   }
   // tablet
-  @media screen and (min-width: 780px) {
-    max-width: 480px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
   }
 
   // desktop
-  @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.21;
+
     margin-bottom: 80px;
+  }
+}
+
+.contacts__text {
+  // desktop
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+  }
+}
+.contacts__wrapper {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
   }
 }
 
@@ -36,8 +66,16 @@
 }
 .registration-form {
   text-align: center;
-}
 
+  @media screen and (min-width: 1280px) {
+    text-align: end;
+  }
+}
+.form-group {
+  @media screen and (min-width: 1280px) {
+    min-width: 610px;
+  }
+}
 .form-input {
   width: 100%;
   max-width: 280px;
@@ -46,16 +84,25 @@
   line-height: 1.21;
 
   border-radius: 5px;
-  padding-left: 8px;
+  padding: 11px 8px;
+
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     max-width: 336px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 288px;
+  }
 }
 
 .form-input.name {
   height: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
 .form-input.email {
   height: 40px;
@@ -64,12 +111,24 @@
   resize: none;
   border-radius: 5px;
   height: 220px;
+  width: 100%;
+  padding: 12px 8px;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
+    max-width: 704px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 608px;
+    max-height: 162px;
   }
 }
 
+.form-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #939eac;
+}
 .form-field {
   width: 100%;
   @media screen and (max-width: 468px) {
@@ -79,15 +138,29 @@
     width: 100%;
   }
 }
+.form-input.name:focus:invalid {
+  border-color: red;
+}
+.form-input.email:focus:invalid {
+  border-color: red;
+}
 
 .form-btn {
   font-size: 16px;
   line-height: 1.19;
-  text-transform: uppercase;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
 }
 
+.button__text {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
 .contacts__subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -95,6 +168,10 @@
   color: var(--primary-white-color);
   text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+  }
 }
 
 .contacts__text {
@@ -103,23 +180,68 @@
   line-height: 1.21;
   color: var(--primary-white-color);
   text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
+// социальные сети
+
+.contacts-socials__wrapper {
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+  }
+}
 .socials__list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 
   margin-bottom: 42px;
+
+  @media screen and (min-width: 1280px) {
+    justify-content: flex-start;
+  }
 }
 
-.socials__item {
-  height: 20px;
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
 }
 
+.icon-regular {
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 0;
+  }
+}
+
+.icon-hovered {
+  opacity: 0;
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 1;
+  }
+}
+
+// контакты
 .contacts__list {
   color: var(--primary-white-color);
 }
 
 .contacts__item + .contacts__item {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
