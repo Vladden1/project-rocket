@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
 }
 
+.contacts-form {
+  width: 100%;
+}
 .contacts__title {
   font-family: 'Inter', sans-serif;
   font-size: 24px;
@@ -37,6 +40,9 @@
 
   // desktop
   @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.21;
+
     margin-bottom: 80px;
   }
 }
@@ -60,6 +66,10 @@
 }
 .registration-form {
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    text-align: end;
+  }
 }
 .form-group {
   @media screen and (min-width: 1280px) {
@@ -74,7 +84,8 @@
   line-height: 1.21;
 
   border-radius: 5px;
-  padding-left: 8px;
+  padding: 11px 8px;
+
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -88,6 +99,7 @@
 
 .form-input.name {
   height: 40px;
+
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
@@ -100,6 +112,7 @@
   border-radius: 5px;
   height: 220px;
   width: 100%;
+  padding: 12px 8px;
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
@@ -110,6 +123,12 @@
   }
 }
 
+.form-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #939eac;
+}
 .form-field {
   width: 100%;
   @media screen and (max-width: 468px) {
@@ -119,6 +138,12 @@
     width: 100%;
   }
 }
+.form-input.name:focus:invalid {
+  border-color: red;
+}
+.form-input.email:focus:invalid {
+  border-color: red;
+}
 
 .form-btn {
   font-size: 16px;
@@ -126,6 +151,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
 }
 
 .button__text {
@@ -139,6 +168,10 @@
   color: var(--primary-white-color);
   text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+  }
 }
 
 .contacts__text {
@@ -147,42 +180,60 @@
   line-height: 1.21;
   color: var(--primary-white-color);
   text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
+
 // социальные сети
 
+.contacts-socials__wrapper {
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+  }
+}
 .socials__list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 
   margin-bottom: 42px;
+
+  @media screen and (min-width: 1280px) {
+    justify-content: flex-start;
+  }
 }
 
-.socials__item {
-  height: 20px;
-}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.socials__link {
-  outline: 1px solid red;
   width: 40px;
   height: 40px;
-}
-.socials__icon {
-  width: 26px;
-  height: 26px;
   border-radius: 50%;
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-}
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: #fff;
-  background-color: red;
+
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
 }
 
-.form-input.name:focus:invalid {
-  border-color: red;
+.icon-regular {
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 0;
+  }
 }
-.form-input.email:focus:invalid {
-  border-color: red;
+
+.icon-hovered {
+  opacity: 0;
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 1;
+  }
 }
 
 // контакты
