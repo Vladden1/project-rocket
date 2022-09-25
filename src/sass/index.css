@@ -950,19 +950,18 @@ textarea {
 
 .aside {
   padding: 0px;
-  background-image: url(../images/testimonials/bg-img-testimonials-sm-1@1x.png), url(../images/testimonials/bg-img-testimonials-sm-2@1x.png);
-  background-size: auto;
+  background-image: url(../images/testimonials/bg-img-testimonials-sm@1x_1.png);
   background-position: left, top;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .aside {
-    background-image: url(../images/testimonials/bg-img-testimonials-md-1@1x.png), url(../images/testimonials/bg-img-testimonials-md-2@1x.png), url(../images/testimonials/bg-img-testimonials-md-3@1x.png);
+    background-image: url(../images/testimonials/bg-img-testimonials-md@1x_1.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .aside {
-    background-image: url(../images/testimonials/bg-img-testimonials-lg-1@1x.png), url(../images/testimonials/bg-img-testimonials-lg-2@1x.png), url(../images/testimonials/bg-img-testimonials-lg-3@1x.png);
+    background-image: url(../images/testimonials/bg-img-testimonials-lg@1x_1.png);
   }
 }
 
