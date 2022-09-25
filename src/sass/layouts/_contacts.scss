@@ -74,14 +74,13 @@
 
   @media screen and (min-width: 1280px) {
     text-align: end;
-  }
-  @media screen and (min-width: 1280px) {
     min-width: 610px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: end;
   }
 }
 
@@ -157,6 +156,8 @@
 .form-btn {
   font-size: 16px;
   line-height: 1.19;
+
+  min-width: 181px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -177,7 +178,9 @@
   color: var(--primary-white-color);
   text-align: center;
   margin-bottom: 20px;
-
+  @media screen and (max-width: 1279px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1280px) {
     text-align: left;
   }
