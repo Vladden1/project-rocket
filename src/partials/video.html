@@ -1,15 +1,62 @@
 <section class="video section">
-  <div class="container">
-    <h2 class="video__title">WATCH THE VIDEO</h2>
-    <p class="video__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
-      at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
-      hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-    </p>
+  <div class="container video__desktop">
     <div class="video__thumb">
-      <a class="video__link" href="">logo</a>
-      <a class="video__link" href="">logo</a>
+      <h2 class="video__title">WATCH THE VIDEO</h2>
+      <p class="video__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
+        at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
+        hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+      </p>
+
+      <ul class="video__list">
+        <li class="video__item">
+          <a class="video__link" href="">
+            <svg class="video__icon" width="" height="">
+              <use href="./images/symbol-defs.svg#icon-apple"></use></svg></a>
+        </li>
+        <li class="video__item">
+          <a class="video__link" href=""
+            ><svg width="" height="">
+              <use
+                class="video__icon"
+                href="./images/symbol-defs.svg#icon-android"></use></svg></a>
+        </li>
+      </ul>
+    </div>
+    <div class="video__wrapper">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/video/img-video-lg-@1x.png 1x,
+            ./images/video/img-video-lg-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/video/img-video-md-@1x.png 1x,
+            ./images/video/img-video-md-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/video/img-video-sm-@1x.png 1x,
+            ./images/video/img-video-sm-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="video__img"
+          src="./images/video/img-video-sm-@1x.png"
+          alt="smartphone with video content on screen"
+          loading="lazy"
+        />
+      </picture>
     </div>
   </div>
 </section>
