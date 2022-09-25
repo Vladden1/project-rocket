@@ -81,12 +81,12 @@ textarea {
   list-style: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section {
     padding: 80px 0;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .section {
     padding: 80px 0;
   }
@@ -497,6 +497,10 @@ textarea {
   padding-bottom: 40px;
 }
 
+.container {
+  position: relative;
+}
+
 .title {
   text-align: center;
 }
@@ -550,19 +554,19 @@ textarea {
   }
 }
 
-.team__photo {
+img {
   display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 16px 16px 24px 16px;
 }
 @media screen and (min-width: 768px) {
-  .team__photo {
+  img {
     margin: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .team__photo {
+  img {
     margin: 14px 12px 20px 12px;
   }
 }
