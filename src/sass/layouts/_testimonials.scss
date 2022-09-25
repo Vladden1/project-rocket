@@ -1,10 +1,10 @@
 
 .aside {
     padding: 0px;
-    
+
     // background-image: url(../images/testimonials/bg-img-testimonials-sm-1@1x.png),
     // url(../images/testimonials/bg-img-testimonials-sm-2@1x.png);
-    // background-size:auto;
+    // background-size:cover;
     // background-position: left, top;
     // background-repeat: no-repeat;
 
@@ -22,9 +22,10 @@
     //     }
 
     background-image: 
-    url(../images/testimonials/bg-img-testimonials-sm@1x_1.png);
-    background-position: left, top;
+    url(../images/testimonials/Group.svg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and(min-width: 768px) and(max-width: 1279px) {
         background-image:
@@ -32,7 +33,7 @@
       }
 
       @media screen and(min-width: 1280px) {
-        background-image: url(../images/testimonials/bg-img-testimonials-lg@1x_1.png);
+        background-image: url(../images/testimonials/Group1x.png);
       }
 
 }  

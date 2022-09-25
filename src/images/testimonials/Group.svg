@@ -1,0 +1,28 @@
+<svg width="957" height="1163" viewBox="0 0 957 1163" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#a)">
+    <path d="M324.004 357.72c24.854-16.141 51.472-34.523 83.804-33.295 26.445 1.005 46.443 23.332 65.796 42.772 27.799 27.925 51.748 58.778 64.952 96.438 3.11 8.872 4.372 23.494 5.178 32.772 1.574 18.12 5.734 33.68 12.695 50.994 6.79 16.891-15.832 28.13-17.815 44.151" stroke="url(#b)" stroke-opacity=".2" stroke-width="205" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#c)">
+    <path d="M601.514 608.454c15.704 25.132 33.62 52.067 31.827 84.372-1.466 26.424-24.139 46.029-43.914 65.04-28.406 27.307-59.671 50.714-97.556 63.258-8.925 2.956-23.567 3.962-32.858 4.606-18.144 1.257-33.774 5.146-51.208 11.803-17.006 6.494-27.849-16.321-43.833-18.583" stroke="url(#d)" stroke-opacity=".2" stroke-width="205" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <linearGradient id="b" x1="389.189" y1="307.945" x2="544.807" y2="548.193" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C5EB"/>
+      <stop offset="1" stop-color="#B544FE"/>
+    </linearGradient>
+    <linearGradient id="d" x1="650.144" y1="674.497" x2="407.217" y2="825.898" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C5EB"/>
+      <stop offset="1" stop-color="#B544FE"/>
+    </linearGradient>
+    <filter id="a" x=".492" y=".873" width="880.703" height="914.189" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="110.5" result="effect1_foregroundBlur_1201_3"/>
+    </filter>
+    <filter id="c" x="40.459" y="284.94" width="916.494" height="877.252" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="110.5" result="effect1_foregroundBlur_1201_3"/>
+    </filter>
+  </defs>
+</svg>
