@@ -1062,15 +1062,20 @@ textarea {
 }
 
 .team {
-  padding-top: 22.86px;
-  padding-bottom: 40px;
-  background-image: url(../images/team/bg-img-team.svg);
+  background-image: url(../images/team/bg-img-team-420@1x.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.container {
-  position: relative;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .team {
+    background-image: url(../images/team/bg-img-team-768@1x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team {
+    background-image: url(../images/team/bg-img-team-1280@1x.png);
+  }
 }
 
 .title {
