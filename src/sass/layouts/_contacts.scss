@@ -3,12 +3,17 @@
   padding-bottom: 0px;
   background-color: rgba(6, 7, 27, 1);
 
-  background-image: url(../images/contacts/bg-img-contacts-lg-1@1x.png),
-    url(../images/contacts/bg-img-contacts-lg-2@1x.png);
+  background-image: url(../images/contacts/mobile.png);
   background-size: cover;
-  background-position: center bottom;
-
+  background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/contacts/tablet.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/desktop.png);
+  }
 }
 
 .contacts-form {
