@@ -1,12 +1,20 @@
 .team {
     padding-top: 22.86px;
     padding-bottom: 40px;
+    background-image: url(../images/team/bg-img-team.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
 }
 
 .title {
-    text-align: center;
+    text-align: center;      
 }
-.text {
+.text {   
+ 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.7;
@@ -24,7 +32,8 @@
 
 }
 
-.team__list {
+.team__list {   
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -54,7 +63,7 @@
         }
 }
 
-.team__photo {
+.team-foto {
     display: block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -66,9 +75,9 @@
 
     @media screen and (min-width: 1280px) {
     margin: 14px 12px 20px 12px;
+    
   }
 }
-
 
 .team__descr {
   padding-bottom: 12px;
