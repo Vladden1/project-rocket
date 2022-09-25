@@ -70,19 +70,23 @@
   @media screen and (min-width: 1280px) {
     text-align: end;
   }
-}
-.form-group {
   @media screen and (min-width: 1280px) {
     min-width: 610px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 .form-input {
   width: 100%;
   max-width: 280px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-
+  border: 0;
   border-radius: 5px;
   padding: 11px 8px;
 

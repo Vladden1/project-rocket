@@ -8,38 +8,30 @@
           name="registration-form"
           autocomplete="off"
         >
-          <div class="form-group" role="group">
-            <label class="form-label">
-              <input
-                type="text"
-                class="form-input name"
-                name="user-name"
-                required
-                placeholder="Name"
-                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-              />
-            </label>
+          <input
+            type="text"
+            class="form-input name"
+            name="user-name"
+            required
+            placeholder="Name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          />
 
-            <label class="form-label">
-              <input
-                type="email"
-                class="form-input email"
-                name="mail"
-                placeholder="Email"
-                required
-              />
-            </label>
+          <input
+            type="email"
+            class="form-input email"
+            name="mail"
+            placeholder="Email"
+            required
+          />
 
-            <label class="form-label message">
-              <textarea
-                type="text"
-                class="form-input message"
-                name="user-message"
-                rows="6"
-                placeholder="Message"
-              ></textarea>
-            </label>
-          </div>
+          <textarea
+            type="text"
+            class="form-input message"
+            name="user-message"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
 
           <button class="form-btn button" type="submit">
             <span class="button__text">submit</span>
