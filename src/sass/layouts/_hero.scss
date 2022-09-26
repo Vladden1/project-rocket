@@ -4,22 +4,19 @@
 
   padding-top: 20px;
   padding-bottom: 122px;
+  overflow: hidden;
 
   background-color: #06071b;
 
   @media screen and (min-width: 768px) {
+    overflow: visible;
+
     padding-bottom: 143px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 26px;
     padding-bottom: 146px;
-  }
-}
-
-.hero__container {
-  @media screen and (min-width: 768px) {
-    position: relative;
   }
 }
 
@@ -97,36 +94,45 @@
   }
 }
 
-.hero__image {
+.picture__wrapper {
   position: absolute;
-  top: 0;
-  right: 0;
   z-index: -1;
   pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 663px;
+  overflow: hidden;
+  transform: translate(-50%, -42%);
+  // background-color: tomato;
 
   @media screen and (min-width: 768px) {
-    top: 0px;
-    right: 0px;
+    height: 558px;
+    transform: translate(-50%, -33%);
   }
 
   @media screen and (min-width: 1280px) {
-    top: -135px;
-    right: 0;
+    height: 678px;
+    transform: translate(-50%, -36%);
   }
 }
 
-.hero__bg-image {
-  display: none;
+.hero__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: none;
+  width: 566px;
+
+  transform: translate(-48%, -50%);
 
   @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: 20px;
+    width: 893px;
+    transform: translate(-51%, -50%);
   }
 
   @media screen and (min-width: 1280px) {
-    top: -60px;
-    left: 0;
+    width: 1280px;
+    transform: translate(-47%, -50%);
   }
 }

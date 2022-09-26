@@ -159,8 +159,11 @@
   }
 }
 
+.file__checkbox:hover + .card-box::before,
+.file__checkbox:focus + .card-box::before,
 .file__checkbox:checked + .card-box::before {
   display: none;
+  // background-color: transparent;
 }
 
 .file__logo {

@@ -1,10 +1,16 @@
 .team {
-    padding-top: 22.86px;
-    padding-bottom: 40px;
-}
+    background-image: url(../images/team/bg-img-team-420@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.container {
-    position: relative;
+    @media screen and(min-width: 768px) and(max-width: 1279px) {
+        background-image: url(../images/team/bg-img-team-768@1x.png);
+      }
+
+      @media screen and(min-width: 1280px) {
+        background-image: url(../images/team/bg-img-team-1280@1x.png);
+      }
 }
 
 .title {
@@ -60,7 +66,7 @@
         }
 }
 
-img {
+.team-foto {
     display: block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -124,51 +130,3 @@ img {
     backdrop-filter: blur(17.5px);
 }
 
-.team-bg-img-1 {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-
-        display: block;
-        position: absolute;
-        box-shadow: none;
-        margin: 0;
-        width: 185px;
-        height: 90px;
-        right: 24px;
-        top: 75px;
-
-    }
-    @media screen and (min-width: 1280px) {
-        width: 185.43px;
-        height: 90.19px;
-        right: 11.57px;
-        top: 29px;
-       
-    }
-}
-
-
-.team-bg-img-2 {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        position: absolute;
-        box-shadow: none;
-        margin: 0;
-        width: 185px;
-        height: 90px;
-        right: 87px;
-        top: 541px; 
-      
-    }
-    @media screen and (min-width: 1280px) {
-        width: 185.43px;
-        height: 90.19px;
-        left: 239px;
-        top: 170px;
-        transform: rotate(-179.99deg);
-       
-    }
-}
