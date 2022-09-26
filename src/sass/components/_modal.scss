@@ -17,7 +17,7 @@
   opacity: 1;
 
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 300ms linear;
+  transition: opacity 250ms linear;
 }
 
 .backdrop.is-hidden {
@@ -38,7 +38,7 @@
   background-color: #07081c;
 
   transform: scale(1);
-  transition: transform 300ms linear;
+  transition: transform 250ms linear;
 
   @media screen and (min-width: 768px) {
     max-width: none;
