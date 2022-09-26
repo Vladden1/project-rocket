@@ -41,8 +41,7 @@
   transition: transform 250ms linear;
 
   @media screen and (min-width: 768px) {
-    max-width: none;
-    width: 568px;
+    max-width: 568px;
     padding: 32px 40px;
   }
 }
