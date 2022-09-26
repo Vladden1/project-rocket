@@ -44,7 +44,7 @@
     height: calc(100% - 2px);
     border-radius: 5px;
     background-color: #06071b;
-    opacity: 0;
+    display: none;
     transition: 300ms;
   }
 
@@ -56,5 +56,5 @@
 
 .button:hover::after,
 .button:focus::after {
-  opacity: 1;
+  display: block;
 }
