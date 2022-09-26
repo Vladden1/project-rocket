@@ -399,6 +399,8 @@ textarea {
   }
 }
 
+.file__checkbox:hover + .card-box::before,
+.file__checkbox:focus + .card-box::before,
 .file__checkbox:checked + .card-box::before {
   display: none;
 }
@@ -651,10 +653,12 @@ textarea {
   z-index: 0;
   padding-top: 20px;
   padding-bottom: 122px;
+  overflow: hidden;
   background-color: #06071b;
 }
 @media screen and (min-width: 768px) {
   .hero__wrapper {
+    overflow: visible;
     padding-bottom: 143px;
   }
 }
@@ -662,12 +666,6 @@ textarea {
   .hero__wrapper {
     padding-top: 26px;
     padding-bottom: 146px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__container {
-    position: relative;
   }
 }
 
@@ -746,50 +744,54 @@ textarea {
   }
 }
 
-.hero__image {
+.picture__wrapper {
   position: absolute;
-  top: 0;
-  right: 0;
   z-index: -1;
   pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 663px;
+  overflow: hidden;
+  transform: translate(-50%, -42%);
 }
 @media screen and (min-width: 768px) {
-  .hero__image {
-    top: 0px;
-    right: 0px;
+  .picture__wrapper {
+    height: 558px;
+    transform: translate(-50%, -33%);
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__image {
-    top: -135px;
-    right: 0;
+  .picture__wrapper {
+    height: 678px;
+    transform: translate(-50%, -36%);
   }
 }
 
-.hero__bg-image {
-  display: none;
+.hero__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: none;
+  width: 566px;
+  transform: translate(-48%, -50%);
 }
 @media screen and (min-width: 768px) {
-  .hero__bg-image {
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: 20px;
+  .hero__image {
+    width: 893px;
+    transform: translate(-51%, -50%);
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__bg-image {
-    top: -60px;
-    left: 0;
+  .hero__image {
+    width: 1280px;
+    transform: translate(-47%, -50%);
   }
 }
 
 .features {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url(../images/features/bg-img-features-sm-1@1x.png), url(../images/features/bg-img-features-sm-2@1x.png);
-  background-size: 400px 250px, 1200px 824px;
-  background-position: right 0, left bottom;
+  background-image: url(../images/features/backgradient-features-sm1.svg);
+  background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
@@ -805,9 +807,9 @@ textarea {
 }
 @media screen and (min-width: 1280px) {
   .features {
-    background-image: url(../images/features/bg-img-features-lg-2@1x.png), url(../images/features/bg-img-features-lg-1@1x.png);
-    background-size: 800px, 600px;
-    background-position: right, left bottom;
+    background-image: url(../images/features/bg-img-features_lg.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -950,18 +952,30 @@ textarea {
 
 .video {
   background-color: rgb(6, 7, 27);
+  background-image: url(../images/video/bg-img-video-sm.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .video {
-    padding-bottom: 46px;
+    background-image: url(../images/video/bg-img-video_md.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/video/bg-video-lg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .video__desktop {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
   }
 }
 
@@ -989,9 +1003,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .video__text {
     max-width: 100%;
-    background-image: url(../images/video/bg-img-video-md-2@1x.png);
-    background-position: 0;
-    background-repeat: no-repeat;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 20px;
@@ -1017,6 +1028,7 @@ textarea {
     align-items: flex-start;
     max-width: 479px;
     flex-wrap: wrap;
+    margin-right: 161px;
   }
 }
 
@@ -1050,25 +1062,20 @@ textarea {
 .video__wrapper {
   max-width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.video__img {
-  background-image: url(../images/video/bg-img-video-sm-@1x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-
 .team {
+  padding-top: 40px;
   background-image: url(../images/team/bg-img-team-420@1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .team {
+    padding-top: 80px;
     background-image: url(../images/team/bg-img-team-768@1x.png);
   }
 }
