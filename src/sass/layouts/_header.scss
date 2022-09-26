@@ -1,30 +1,22 @@
+.box {
+  width: 100%;
+  height: 20px;
+  background-color: #06071b;
+}
+
 .header {
   position: fixed;
   z-index: 100;
-  top: 20px;
+  top: 20;
   left: 0;
   width: 100%;
-  margin: 0;
 
-  // margin-bottom: 100px;
-  padding-top: 14px;
-  padding-bottom: 14px;
   background-color: #06071b;
   background-image: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
-
-  @media screen and (min-width: 768px) {
-    // margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    // margin-bottom: 145px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-  }
 }
 
 .header__container {
@@ -75,6 +67,17 @@
 .navigation__item {
   font-size: 12px;
   line-height: 1.25;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 29px;
+    padding-bottom: 28px;
+  }
 }
 
 .navigation__link:hover,
