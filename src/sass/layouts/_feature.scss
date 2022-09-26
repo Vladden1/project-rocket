@@ -1,28 +1,21 @@
 .features {
-  padding-top: 40px;
-  padding-bottom: 40px;
 
   @media screen and(min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-    background-image: url(../images/features/bg-img-features-sm-1@1x.png),
-    url(../images/features/bg-img-features-sm-2@1x.png);
-    background-size:400px 250px,  1200px 824px;
-    background-position: right 0,
-    left bottom;
+    background-image: url(../images/features/backgradient-features-sm1.svg);
+    background-position: center;
     background-repeat: no-repeat;
       @media screen and(min-width: 768px) and(max-width: 1279px) {
         background-image: none;
         
       }
         @media screen and(min-width: 1280px) {
-          background-image: url(../images/features/bg-img-features-lg-2@1x.png),
-              url(../images/features/bg-img-features-lg-1@1x.png);
-            background-size: 800px, 600px;
-            background-position: right ,
-              left bottom;
+          background-image: url(../images/features/bg-img-features_lg.png);
+          background-position: center;
+          background-repeat: no-repeat;
         }
 }
 
