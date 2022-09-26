@@ -79,3 +79,20 @@
 .swiper {
   width: 100%;
 }
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  font-size: 80px;
+}
+
+.slider .swiper-pagination {
+  padding: o;
+}
+
+.slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
