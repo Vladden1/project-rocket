@@ -1,11 +1,12 @@
 .team {
-    padding-top: 80px;
+    padding-top: 40px;
     background-image: url(../images/team/bg-img-team-420@1x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and(min-width: 768px) and(max-width: 1279px) {
+    @media screen and(min-width: 768px) {
+        padding-top: 80px;
         background-image: url(../images/team/bg-img-team-768@1x.png);
       }
 
