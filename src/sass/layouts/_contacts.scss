@@ -90,7 +90,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-  border: 0;
+  border-color: transparent;
   border-radius: 5px;
   padding: 11px 8px;
 
@@ -137,6 +137,11 @@
   line-height: 17px;
   color: #939eac;
 }
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
 .form-field {
   width: 100%;
   @media screen and (max-width: 468px) {
@@ -145,12 +150,6 @@
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-}
-.form-input.name:focus:invalid {
-  border-color: red;
-}
-.form-input.email:focus:invalid {
-  border-color: red;
 }
 
 .form-btn {
