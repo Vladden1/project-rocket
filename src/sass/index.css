@@ -25,6 +25,17 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    scroll-padding-top: 79px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    scroll-padding-top: 89px;
+  }
 }
 
 .visually-hidden {
@@ -1243,11 +1254,6 @@ textarea {
   }
 }
 
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 @media screen and (max-width: 768px) {
   .team__list {
     gap: 24px;
@@ -1255,6 +1261,8 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .team__list {
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px 32px;
   }
 }
