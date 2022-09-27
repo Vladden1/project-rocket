@@ -19,7 +19,6 @@
     text-align: center;      
 }
 .text {   
- 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.7;
@@ -51,19 +50,17 @@
   }
 
 .team__item {
-
     border-radius: 15px;
-
     @media screen and (min-width: 480px) {
         width: 280px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px) {
         width: 336px;
     }
     
     @media screen and (min-width: 1280px) {
-            width: 288px;
+        width: 288px;
         }
 }
 .team-picture {
@@ -81,7 +78,6 @@
 }
 
 .team-foto {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
