@@ -590,36 +590,54 @@ textarea {
   pointer-events: none;
 }
 
-.video__modal {
-  position: relative;
-  min-width: 1000px;
-  height: 600px;
-  padding: 48px 24px;
-  margin: auto;
-  background-color: #07081c;
-  transform: scale(1);
-  transition: transform 250ms linear;
+.video__backdrop.is-hidden .video__modal {
+  transform: scale(0.3);
 }
-@media screen and (max-width: 1279px) {
-  .video__modal {
-    min-width: 100%;
-    height: 380px;
-  }
+
+.video__close-btn {
+  z-index: 25;
+  color: rgb(117, 117, 117);
+  top: 10px;
+  right: 10px;
 }
-@media screen and (max-width: 767px) {
-  .video__modal {
-    min-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .video__modal {
-    max-width: 568px;
-    padding: 32px 40px;
+@media (min-width: 768px) {
+  .video__close-btn {
+    top: 24px;
+    right: 24px;
   }
 }
 
-.video__backdrop.is-hidden .video__modal {
-  transform: scale(0.3);
+.video__modal {
+  position: relative;
+  margin: auto;
+  border-radius: 32px;
+  max-width: 960px;
+  padding: 0px;
+  width: calc(100% - 32px);
+  background-color: transparent;
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .video__modal {
+    padding: 32px 56px;
+  }
+}
+
+.modal__iframe-thumb {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .box {
@@ -815,7 +833,6 @@ textarea {
 .picture__wrapper {
   position: absolute;
   z-index: -1;
-  pointer-events: none;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -1172,6 +1189,12 @@ textarea {
     height: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .button__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
 .button__icon:hover {
   transform: scale(1.1);
 }
@@ -1344,6 +1367,8 @@ textarea {
 }
 
 .aside__img {
+  width: 181px;
+  height: 181px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -1427,6 +1452,25 @@ textarea {
 
 .contacts-form {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .contacts-form {
+    min-width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-form {
+    min-width: 704px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-form {
+    width: 608px;
+    margin: 0;
+  }
 }
 
 .contacts__title {
@@ -1472,7 +1516,7 @@ textarea {
   .contacts__wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -1503,7 +1547,7 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
-  border: 0;
+  border-color: transparent;
   border-radius: 5px;
   padding: 11px 8px;
   margin-bottom: 20px;
@@ -1542,12 +1586,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .form-input.message {
     max-width: 704px;
+    max-height: 162px;
   }
 }
 @media screen and (min-width: 1280px) {
   .form-input.message {
     max-width: 608px;
-    max-height: 162px;
   }
 }
 
@@ -1572,6 +1616,18 @@ textarea {
   color: #939eac;
 }
 
+.form-input:not(:-moz-placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+.form-input:not(:-ms-input-placeholder):required:invalid {
+  border-color: red;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
 .form-field {
   width: 100%;
 }
@@ -1584,14 +1640,6 @@ textarea {
   .form-field {
     width: 100%;
   }
-}
-
-.form-input.name:focus:invalid {
-  border-color: red;
-}
-
-.form-input.email:focus:invalid {
-  border-color: red;
 }
 
 .form-btn {
