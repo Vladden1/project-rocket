@@ -11,8 +11,7 @@
   height: 100%;
 
   display: flex;
-  padding: 40px 20px;
-  overflow: auto;
+  padding: 0 20px;
 
   opacity: 1;
 
@@ -21,7 +20,6 @@
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -33,6 +31,8 @@
 
   padding: 48px 24px;
   margin: auto;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
 
   color: #ffffff;
   background-color: #07081c;
@@ -108,6 +108,8 @@
 .file__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 
   margin-bottom: 28px;
@@ -119,10 +121,6 @@
 }
 
 .file__item {
-  flex-grow: 1;
-}
-
-.card-box {
   position: relative;
   z-index: 0;
 
@@ -130,42 +128,55 @@
   width: 100%;
   min-height: 394px;
   height: 100%;
+  flex-grow: 1;
 
   padding: 20px 28px;
 
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  background-color: #07081c;
   background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 2px;
-    left: 2px;
-
-    display: block;
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-
-    border-radius: 6px;
-    background-color: #07081c;
-  }
-
   @media screen and (min-width: 768px) {
-    width: 233px;
+    width: calc((100% - 22px) / 2);
   }
 }
 
-.file__checkbox:hover + .card-box::before,
-.file__checkbox:focus + .card-box::before,
-.file__checkbox:checked + .card-box::before {
-  display: none;
-  // background-color: transparent;
+.file__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
 }
 
-.file__logo {
+.file__background {
+  position: absolute;
+  z-index: -1;
+  top: 2px;
+  left: 2px;
+
+  display: block;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+
+  opacity: 1;
+  border-radius: 6px;
+  background-color: #07081c;
+
+  transition: opacity 250ms linear;
+}
+
+.file__item:hover .file__background,
+.file__item:focus .file__background,
+.file__checkbox:checked + .file__background {
+  opacity: 0;
+}
+
+.file__icon {
   display: block;
   width: 80px;
   height: 106px;
@@ -175,12 +186,6 @@
   margin-bottom: 20px;
 
   fill: #ffffff;
-}
-
-.file__icon {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .file__title {
@@ -356,11 +361,4 @@
 .modal__download-button:hover > .button::after,
 .modal__download-button:focus > .button::after {
   background-color: #07081c;
-}
-
-.modal__download-link {
-  min-width: 232px;
-  @media screen and (min-width: 768px) {
-    min-width: 200px;
-  }
 }
