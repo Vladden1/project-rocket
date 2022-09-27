@@ -18,6 +18,20 @@
 
 .contacts-form {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) {
+    min-width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 704px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 608px;
+    margin: 0;
+  }
 }
 .contacts__title {
   font-family: 'Inter', sans-serif;
@@ -62,7 +76,7 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -124,10 +138,10 @@
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
+    max-height: 162px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 608px;
-    max-height: 162px;
   }
 }
 
