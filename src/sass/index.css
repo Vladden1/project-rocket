@@ -748,7 +748,7 @@ textarea {
   text-fill-color: transparent;
 }
 
-.hero__wrapper {
+.hero {
   position: relative;
   z-index: 0;
   padding-top: 182px;
@@ -757,14 +757,14 @@ textarea {
   background-color: #06071b;
 }
 @media screen and (min-width: 768px) {
-  .hero__wrapper {
+  .hero {
     overflow: visible;
     padding-top: 142px;
     padding-bottom: 143px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__wrapper {
+  .hero {
     padding-top: 243px;
     padding-bottom: 146px;
   }
@@ -947,9 +947,34 @@ textarea {
   }
 }
 
+.features__img-wrapper {
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .features__img-wrapper {
     position: relative;
+  }
+}
+
+.feature__img-thumb {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .feature__img-thumb {
+    width: 380px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .feature__img-thumb {
+    margin-left: 0;
+    max-width: 480px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .feature__img-thumb {
+    max-width: 396px;
   }
 }
 
@@ -957,7 +982,6 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  max-width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .features__img {
@@ -1092,7 +1116,6 @@ textarea {
 .video__text {
   margin-left: auto;
   margin-right: auto;
-  max-width: 280px;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -1168,7 +1191,6 @@ textarea {
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  color: #b544fe;
 }
 
 .video__btn {
@@ -1254,21 +1276,23 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .team__list {
-    gap: 24px;
-  }
-}
 @media screen and (min-width: 768px) {
   .team__list {
+    gap: 40px 32px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 32px;
   }
 }
 
 .team__item {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .team__item:nth-child(-n+3) {
+    margin-bottom: 24px;
+  }
 }
 @media screen and (min-width: 480px) {
   .team__item {
