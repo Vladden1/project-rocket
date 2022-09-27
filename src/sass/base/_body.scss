@@ -15,4 +15,13 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+
+  @media screen and (min-width: 768px) {
+    scroll-padding-top: 79px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    scroll-padding-top: 89px;
+  }
 }
