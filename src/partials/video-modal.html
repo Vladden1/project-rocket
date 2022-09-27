@@ -1,19 +1,26 @@
 <div class="video__backdrop is-hidden" data-video__modal>
   <div class="video__modal">
-    <button data-video__modal-close type="button" class="modal__close-button">
+    <button
+      data-video__modal-close
+      type="button"
+      class="modal__close-button video__close-btn"
+    >
       <svg class="modal__close-icon">
         <use href="./images/symbol-defs.svg#modal-close-icon"></use>
       </svg>
     </button>
-    <iframe
-      width="100%"
-      height="100%"
-      src="https://www.youtube.com/embed/DkaUsBwe0fo"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <div class="modal__iframe-thumb">
+      <iframe
+        class="video__iframe"
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/DkaUsBwe0fo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </div>
 
